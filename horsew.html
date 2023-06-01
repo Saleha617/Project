@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            
+            overflow:hidden ;
+            margin: 0;
+            border: none;
+            padding: 0;
+
+        }
+    #horse {
+        background-image: url("h.jpg");
+      height:200px;
+       width:auto;
+       background-repeat: no-repeat;
+       margin-top: 320px;
+        animation: walk 1.9s steps(12) infinite;
+    }
+  @keyframes walk {
+        0%{background-position: 0px;}
+        100%{background-position:1500px;}
+    }
+    #footer{
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+    }
+    #sky
+    {
+        position: absolute;
+        padding: 0;
+        width: 100%;
+        left:0;
+        top:0;
+        margin-top: 0px;
+    }
+</style>
+</head>
+<body>
+    <div id="horse"></div>
+    <div id="footer">
+        <img  height="250px" width="100%" src="grass1.png" alt="d">
+    </div>
+    <div id="sky">
+        <img src="https://www.pngmart.com/files/22/Sky-PNG-Photo.png" height="500px" width="100%">
+    </div>
+</body>
+</html>
